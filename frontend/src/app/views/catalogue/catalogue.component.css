@@ -1,0 +1,57 @@
+.contenedor {
+    margin-top: 22%;
+}
+
+.buscador {
+    margin-left: 14%;
+    margin-right: 1%;
+    width: 250px;
+}
+
+.filtros {
+    margin-top: 3%;
+    margin-left: 16%;
+}
+
+.button {
+    background-color: #7BB7EF;
+    margin-right: 5%;
+    padding: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 2px 2px 4px #000000;
+    font-size: 12px;
+}
+
+.button1 {
+    border-radius: 2px;
+}
+
+.button2 {
+    border-radius: 4px;
+}
+
+.button3 {
+    border-radius: 8px;
+}
+
+.button4 {
+    border-radius: 12px;
+}
+
+.button5 {
+    border-radius: 50%;
+}
+
+.item {
+    margin-top: 5%;
+    background-color: #DFDFDF;
+    padding: 5%;
+    border: 2px solid #FFF25E;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.imagen {
+    margin-left: 30%;
+}

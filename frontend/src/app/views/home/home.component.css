@@ -1,0 +1,15 @@
+.contenedor{
+    margin-top: 15%;
+
+}
+.icon{
+    width: 90%;
+    margin-left: 7%;
+    margin-top: 15%;
+}
+.text{
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}

@@ -1,0 +1,33 @@
+<div class="contenedor">
+    <h2 class="tittle">Contáctanos</h2>
+    <h5 class="tittle">Comentanos tus opiniones o tus preguntas usando este formulario</h5>
+
+    <div id="contenedor" class="form">
+        <form #userForm="ngForm">
+
+            <div class="box">
+                <label class="label" for="user">Correo Electrónico</label>
+                <div class="form-group">
+                    <input class="mensaje1" type="text" [(ngModel)]="user.name" name="name" #name="ngModel" required>
+                    <div *ngIf="name.invalid && name.dirty" class="alert">
+                        <div class="Required" *ngIf="name.errors?.['required']">Campo requerido</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box1">
+                <label class="label" for="password">Mensaje</label>
+                <div class="form-group">
+                    <textarea class="mensaje" type="text" [(ngModel)]="user.password" name="password"
+                        #password="ngModel" required minlength="4" size="20"></textarea>
+                    <div *ngIf="password.invalid && password.dirty" class="alert">
+                        <div class="Required" *ngIf="password .errors?.['required']">Campo requerido</div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="button button3" (click)="logout()">Enviar</a>
+        </form>
+
+    </div>
+</div>

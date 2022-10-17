@@ -1,0 +1,20 @@
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a href="home" class="active"><b>Muebles Henríquez</b></a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="catalogue">Catálogo</a>
+    <a href="contact">Contáctanos</a>
+  </div>
+
+  <a id="acceso" *ngIf="miToken == 0" class="icon1" routerLink="/login"><span><i class="fa fa-sign-in"></i></span></a>
+  <a id="acceso" *ngIf="miToken != 0" class="icon1" (click)="logout()"><span><i class="fa fa-sign-out"></i></span></a>
+</div>
+
